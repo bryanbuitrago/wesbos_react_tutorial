@@ -1,0 +1,20 @@
+import React from 'react';
+// Stateless Function Component
+
+const Header = (props) => {
+    return (
+      <header className="top">
+        <h1>
+          Catch
+          <span className="ofThe">
+            <span className="of">of</span>
+              <span className="the">the</span>
+          </span>
+        Day
+      </h1>
+      <h3 className="tagline"><span>{props.tagline}</span></h3> {/*remove the this keyword from this.props.tagline */}
+      </header>
+    )
+}
+
+export default Header;
